@@ -55,11 +55,13 @@ export class App extends Component {
 
     parar = () => {
         clearInterval(this.timer)
+        this.timer =null
         this.setState({numero1: '0'});
 
         this.setState({numero2: '0'});
 
         this.setState({operacao: '+'})
+
     }
       
 
